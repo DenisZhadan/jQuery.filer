@@ -297,7 +297,7 @@
 								id = (f._itFc ? f._itFc.id : i),
 								name = file.name,
 								size = file.size,
-								type = file.type.split("/", 1)
+								type = file.type ? file.type.split("/", 1) : ""
 								.toString()
 								.toLowerCase(),
 								ext = name.indexOf(".") != -1 ? name.split(".")
